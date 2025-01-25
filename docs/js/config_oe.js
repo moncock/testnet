@@ -1,6 +1,6 @@
 // chain
 const CHAIN_NAME      = "Sepolia Testnet";
-const CHAIN_RPC       = "https://rpc.sepolia.org";
+const CHAIN_RPC       = "https://eth-sepolia.g.alchemy.com/v2/cN878CC_klVwsO9QsJ9mlLRqxKBeNHIU";
 const CHAIN_ID        = 11155111;
 const CHAIN_SYMBOL    = "ETH";
 const CHAIN_EXPLORER  = "https://sepolia.etherscan.io";

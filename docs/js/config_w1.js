@@ -1,14 +1,14 @@
 // chain
-const CHAIN_NAME      = "Monad Devnet";
-const CHAIN_RPC       = "https://devnet1.monad.xyz/rpc/8XQAiNSsPCrIdVttyeFLC6StgvRNTdf";
-const CHAIN_ID        = 41454;
-const CHAIN_SYMBOL    = "DMON";
-const CHAIN_EXPLORER  = "https://brightstar-884.devnet1.monad.xyz";
+const CHAIN_NAME      = "Sepolia Testnet";
+const CHAIN_RPC       = "https://eth-sepolia.g.alchemy.com/v2/cN878CC_klVwsO9QsJ9mlLRqxKBeNHIU";
+const CHAIN_ID        = 11155111;
+const CHAIN_SYMBOL    = "ETH";
+const CHAIN_EXPLORER  = "https://sepolia.etherscan.io";
 
 // contract
 const MAX_SUPPLY      = 10_000;
 const MINT_PER_WALLET = 2;
-const CONTRACT_ADDR   = "0xe32Dd61A7A62560c1caC21A149763537d09328E8";
+const CONTRACT_ADDR   = "0xfC644E6CA7aab002e8D84F0fD9A8449Aa88ABC3B";
 const MINT_GAS_RATE   = 1;
 const MINT_PRICE      = 0;
 const TOKEN_SYMBOL    = null;
