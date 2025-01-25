@@ -6,9 +6,9 @@ const CHAIN_SYMBOL    = "ETH";
 const CHAIN_EXPLORER  = "https://sepolia.etherscan.io";
 
 // contract
-const MAX_SUPPLY      = 10_000;
+const MAX_SUPPLY      = 5_000;
 const MINT_PER_WALLET = 2;
-const CONTRACT_ADDR   = "0xfC644E6CA7aab002e8D84F0fD9A8449Aa88ABC3B";
+const CONTRACT_ADDR   = "0xc33DbF1f381237492b85C364d8eC4Eb258200771";
 const MINT_GAS_RATE   = 1;
 const MINT_PRICE      = 0;
 const TOKEN_SYMBOL    = null;
