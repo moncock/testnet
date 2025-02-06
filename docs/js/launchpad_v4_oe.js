@@ -76,7 +76,7 @@ $('#connect').click(async _ => {
 
   // get remaining qty
   let minted_qty = await reader.getFunction('numberMinted').staticCall(signer.address);
-  let remaining_qty = MINT_PER_WALLET - parseInt(minted_qty);
+  let remaining_qty = 1; //MINT_PER_WALLET - parseInt(minted_qty); --- unlimit, mint 1 per time
   if (MAX_SUPPLY > 0) remaining_qty = Math.min(remaining_qty, rsupply);
 
   // update connect/disconnect buttons
