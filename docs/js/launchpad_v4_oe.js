@@ -79,6 +79,11 @@ $('#connect').click(async _ => {
   let remaining_qty = 1; //MINT_PER_WALLET - parseInt(minted_qty); --- unlimit, mint 1 per time
   if (MAX_SUPPLY > 0) remaining_qty = Math.min(remaining_qty, rsupply);
 
+  // patch tweet text
+  minted_qty = parseInt(minted_qty) + 1;
+  let new_tweet = TWEET_TEXT.replace('{}', number_to_ordinal(minted_qty));
+  $('.btn-tweet').attr('href', 'https://twitter.com/intent/tweet?text=' + encodeURIComponent(new_tweet));
+
   // update connect/disconnect buttons
   hide_connect();
   show_disconnect();
@@ -386,3 +391,20 @@ let free_mint = MINT_PRICE == 0;
 let paid_mint = MINT_PRICE > 0;
 let erc20_mint = TOKEN_SYMBOL != CHAIN_SYMBOL;
 let eth_mint  = TOKEN_SYMBOL == CHAIN_SYMBOL;
+
+// number
+function number_to_ordinal(n) {
+  if (n <= 0) return n; // no ordinals for zero or negative numbers
+
+  const suffixes = ["th", "st", "nd", "rd"];
+  const specialCases = [11, 12, 13]; // special cases that always end in "th"
+
+  const lastDigit = n % 10;
+  const lastTwoDigits = n % 100;
+
+  const suffix = specialCases.includes(lastTwoDigits)
+    ? "th"
+    : suffixes[lastDigit] || "th";
+
+  return n + suffix;
+}
