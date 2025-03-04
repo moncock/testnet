@@ -8,7 +8,7 @@ const CHAIN_EXPLORER  = "https://testnet.monadexplorer.com/";
 // contract
 const MAX_SUPPLY      = null;
 const MINT_PER_WALLET = 1;
-const CONTRACT_ADDR   = "0xc1afded3a96adcfd5d2148ddd54a2db95f770b19"; // TODO
+const CONTRACT_ADDR   = "0x33F469E2dFa941674Ea1a38399FF43231FF5bc13";
 const MINT_GAS_RATE   = 1;
 const MINT_PRICE      = 0;
 const TOKEN_SYMBOL    = null;
