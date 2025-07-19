@@ -20,4 +20,4 @@ const PROOF_URL       = null;
 // twitter
 const TWEET_TEXT      = `Just minted {} Moncock OG on Monad Testnet!
 
-https://testnet.moncock.xyz/`;
+https://moncock.github.io/testnet/`;
